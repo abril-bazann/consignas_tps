@@ -111,6 +111,17 @@ int consigna_7(){
     if(flotante<0){
         cout<<"El valor es negativo";
     } else if(flotante>0){cout<<"El valor es positivo";}else{cout<<"El valor es 0";}
+}
 
-
+int consigna_8(){
+    char caracter;
+    cin>>caracter;
+    
+    if (isalpha(caracter)) { //verifica si el caracter es un digito del 0 al 9.
+        cout << "El caracter es una letra" << endl;
+    } else if (isdigit(caracter)) {
+        cout << "El caracter es un numero" << endl;
+    } else {
+        cout << "El caracter es un caracter especial." << endl;
+    }
 }
