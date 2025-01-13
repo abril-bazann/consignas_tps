@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int consigna_1(){
 /*Escribir un programa en C++ que solicite se ingrese un número flotante por teclado y 
 muestre por pantalla el mensaje "El valor es negativo" unicamente en el caso de que 
 el valor ingresado sea menor estricto que cero.*/
@@ -15,16 +15,20 @@ if(numero<0){
 }
 
 //---------------------------------------------------------------------------
-/*Complete el siguiente programa de C++ para que solicite se ingrese por teclado las 
+#include <iostream>
+using namespace std;
+
+int consigna_2(){
+/* Complete el siguiente programa de C++ para que solicite se ingrese por teclado las 
 coordenadas x0 e y0 de un punto en R2. Si el punto está en el primer cuadrante, 
 mostrar por pantalla el mensaje: "El punto pertenece al primer cuadrante". 
 Se debe considerar que el punto está en el primer cuadrante cuando se cumple que x0 es mayor que 
-cero y que y0 es mayor o igual a cero..*/
+cero y que y0 es mayor o igual a cero.. */
 int x0,y0;
-cout<<"Igrese la coordenada x0 de R2: ";
+cout<<"Ingrese la coordenada x0 de R2: ";
 cin>>x0;
 cout<<endl;
-cout<<"Igrese la coordenada y0 de R2: ";
+cout<<"Ingrese la coordenada y0 de R2: ";
 cin>>y0;
 //primer cuadrante ++ , segundo cuadrante -+ , tercer cuadrante -- ,  cuarto cuadrante +-
 
@@ -38,3 +42,23 @@ if(x0>0 && y0>0){
                 cout<<"Esa coordenada se encuentra en el cuarto cuadrante";
                 }
 
+}
+
+//---------------------------------------------------------------------------
+#include <cctype> 
+int consigna_3(){
+/*Escriba un programa en c++ que solicite se ingrese por teclado un caracter y lo guarde en una variable c. 
+Si el caracter ingresado es una letra minúscula debe remplazarse por la mayúscula correspondiente (por ejemplo: si se 
+ingresa 'k' debe remplazarse el contenido de c por 'K'). En caso de que el caracter ingresado no sea una letra 
+minúscula el valor debe quedar intacto. Luego se debe mostrar por pantalla el contenido de la variable c, 
+que en ningún caso puede ser una minúscula.  */
+
+char c;
+cin>>c;
+
+if(islower(c)){
+    c=toupper(c);
+    }
+cout<<c;
+
+}
