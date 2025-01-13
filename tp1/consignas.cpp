@@ -125,3 +125,21 @@ int consigna_8(){
         cout << "El caracter es un caracter especial." << endl;
     }
 }
+
+int consigna_9(){
+    double x0,y0;
+    cout<<"Ingrese la coordenada x0 de R2: ";
+    cin>>x0;
+    cout<<endl;
+    cout<<"Ingrese la coordenada y0 de R2: ";
+    cin>>y0;
+    if(x0>0 && y0>=0){
+        cout<<"Esa coordenada se encuentra dentro del primer cuadrante";
+        }else if(x0<=0 && y0>0){
+            cout<<"Esa coordenada se encuentra en el segundo cuadrante";
+            }else if(x0<0 && y0<=0){
+                cout<<"Esa coordenada está en el tercer cuadrante";
+                }else if(x0>=0 && y0<0){
+                    cout<<"Esa coordenada se encuentra en el cuarto cuadrante";
+                    }else if(x0==0 && y0 ==0){cout<<"El punto ingresado es el origen";}
+}
