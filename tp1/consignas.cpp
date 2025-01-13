@@ -71,7 +71,7 @@ int consigna_4(){
 
     if(flotante<0){
         cout<<"El valor es negativo";
-    } else{cout<<"El valor el no negativo";}
+    } else{cout<<"El valor es no negativo";}
 
 }
 
@@ -100,4 +100,17 @@ int consigna_6(){
     }else{
         cout<<"El caracter "<<c<<" no se puede convertir";
         }
+}
+
+int consigna_7(){
+    /*Escribir un programa en C++ que solicite se ingrese un número flotante por teclado y muestre por pantalla el mensaje "El valor es negativo" en caso de que el valor ingresado sea negativo, el mensaje "El valor es positivo" en caso que sea positivo y el mensaje "El valor es cero" en caso de no cumplirse las dos primeras condiciones.*/
+
+    float flotante;
+    cin>>flotante;
+
+    if(flotante<0){
+        cout<<"El valor es negativo";
+    } else if(flotante>0){cout<<"El valor es positivo";}else{cout<<"El valor es 0";}
+
+
 }
