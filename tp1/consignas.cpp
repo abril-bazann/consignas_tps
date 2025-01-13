@@ -74,3 +74,18 @@ int consigna_4(){
     } else{cout<<"El valor el no negativo";}
 
 }
+
+int consigna_5(){
+    /*Escribir un programa en C++ que solicite se ingrese un número real x por teclado y luego muestre por pantalla el resultado de evaluar x en la función discontinua*/
+    int x;
+    cout<<"Ingrese un numero real x por teclado: ";
+    cin>>x;
+    int MenorIgualA10= x*x-3;
+    int MayorA10=x*x;
+    if (x<=10){
+        cout<<MenorIgualA10;
+    }else if(x>10){
+        cout<<MayorA10;
+    }
+
+}
