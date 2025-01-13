@@ -89,3 +89,15 @@ int consigna_5(){
     }
 
 }
+
+int consigna_6(){
+    /*Escriba un programa en c++ que solicite se ingrese por teclado un caracter y lo guarde en una variable c. Si el caracter ingresado es una letra minúscula debe mostrar por pantalla la mayúscula correspondiente (ejemplo: si se ingresa una 'k' se debe mostrar una 'K'). En caso contrario (el caracter ingresado no es una letra minúscula) se debe mostrar por pantalla el mensaje "El caracter x no se puede convertir" remplazando x por el caracter ingresado.*/
+    char c;
+    cin>>c;
+    if(islower(c)){
+        c=toupper(c);
+        cout<<c;
+    }else{
+        cout<<"El caracter "<<c<<" no se puede convertir";
+        }
+}
